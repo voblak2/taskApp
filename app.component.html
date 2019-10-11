@@ -1,0 +1,9 @@
+<div class="App">
+  <div class="task-wrapper">
+    <app-header></app-header>
+    <app-task-input></app-task-input>
+    <div *ngFor="let task of taskService.getTask()">
+      <app-task-item [task]="task"></app-task-item>
+    </div>
+  </div>
+</div>
